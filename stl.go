@@ -4,7 +4,7 @@ import (
 	"math"
 	"sort"
 
-	"github.com/chewxy/stl/loess"
+	"github.com/apecloud/stl/loess"
 )
 
 type state struct {

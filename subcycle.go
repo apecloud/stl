@@ -3,7 +3,7 @@ package stl
 import (
 	"math"
 
-	"github.com/chewxy/stl/loess"
+	"github.com/apecloud/stl/loess"
 	"github.com/pkg/errors"
 	"gorgonia.org/tensor"
 	"gorgonia.org/tensor/native"

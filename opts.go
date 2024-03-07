@@ -1,7 +1,7 @@
 package stl
 
 import (
-	"github.com/chewxy/stl/loess"
+	"github.com/apecloud/stl/loess"
 )
 
 // Config is a configuration structure
@@ -53,6 +53,14 @@ func WithRobustIter(n int) Opt {
 func WithIter(n int) Opt {
 	return func(s *state) {
 		s.innerIter = n
+	}
+}
+
+// WithQuadratic indicates how many iterations to run.
+// The default is 2.
+func WithQuadratic() Opt {
+	return func(s *state) {
+		s.tConf.Fn = loess.Quadratic
 	}
 }
 
